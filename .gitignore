@@ -1,0 +1,30 @@
+# Terraform build artifacts
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Keep the dependency lock file in git
+!.terraform.lock.hcl
+
+# Local variables (often contain secrets)
+*.tfvars
+*.auto.tfvars
+
+# Keys / certs / secrets (adjust to your filenames)
+*.pem
+*.key
+*.pfx
+*.cer
+*.crt
+*.csr
+*.der
+*.jks
+*.p12
+*.secrets.*
+
+# Editor/OS clutter
+.vscode/
+.DS_Store
+Thumbs.db
